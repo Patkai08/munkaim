@@ -1,1 +1,152 @@
-<h1>Coming Soon...</h1>
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            margin: 50px auto auto auto;
+        }
+        section {
+            border: 2px solid darkslategray;
+            margin: 5px;
+        }
+        section>h3{
+            text-align: center;
+        }
+        .tablakeret {
+            border: 1px solid darkslategray;
+        }
+        td {
+            border: 1px solid darkslategray;
+        }
+        .cellakeretezet tr {
+            border: 1px solid darkslategray;
+        }
+        .egyvonalas {
+            border-collapse: collapses;
+        }
+        table.borderradius, table.borderradius td{
+            border-radius: 10px;
+        }
+        table.fixcellameret td{
+            width: 30px;
+            height: 30px;
+            border-width: 3px;
+        }
+    
+
+    </style>
+</head>
+<body>
+
+    <h1>Coming Soon...</h1>
+<section>
+    <h3>Alap szerkezet</h3>
+    <table class="tablakeret">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h3>Keret</h3>
+    <table class="tablakeret">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+    </table>
+</section>
+
+<section>
+    <h3>Cellák keretezése</h3>
+    <table class="cellakeretezet">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+    </table>
+</section>
+
+<section>
+    <h3>Táblázat és cellák keretezése, dupla vonalazás nélkül</h3>
+    <table class="egyvonalas">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+    </table>
+</section>
+
+<section>
+<h3>border-radius</h3>
+    <table class="borderradius">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+    </table>
+</section>
+
+<section>
+    <h3>border-style</h3>
+        <table class="fixcellameret">
+            <tr>
+                <td style="border-style: dotted;">1</td>
+                <td style="border-style: dashed;">2</td>
+                <td style="border-style: solid;">3</td>
+            </tr>
+            <tr>
+                <td style="border-style: double;">4</td>
+                <td style="border-style: groove;">5</td>
+                <td style="border-style: ridge;">6</td>
+            </tr>
+            <tr>
+                <td style="border-style: inset;">7</td>
+                <td style="border-style: outset;">8</td>
+                <td style="border-style: hidden;">9</td>
+            </tr>
+        </table>
+        </table>
+    </section>
+</body>
+</html>
