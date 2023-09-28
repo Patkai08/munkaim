@@ -8,6 +8,8 @@
     <style>
         table{
             margin: 50px auto auto auto;
+            border: 1px solid;
+            border-collapse: collapse;
         }
         section {
             border: 2px solid darkslategray;
@@ -19,7 +21,7 @@
         .tablakeret {
             border: 1px solid darkslategray;
         }
-        td {
+        th {
             border: 1px solid darkslategray;
         }
         .cellakeretezet tr {
@@ -28,13 +30,17 @@
         .egyvonalas {
             border-collapse: collapses;
         }
-        table.borderradius, table.borderradius td{
+        table.borderradius, table.borderradius th{
             border-radius: 10px;
         }
-        table.fixcellameret td{
+        table.fixcellameret th{
             width: 30px;
             height: 30px;
             border-width: 3px;
+        }
+        .tábla {
+            text-align: center;
+            width: 90%;
         }
     
 
@@ -47,14 +53,14 @@
     <h3>Alap szerkezet</h3>
     <table class="tablakeret">
         <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
         </tr>
         <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
         </tr>
     </table>
 </section>
@@ -63,14 +69,14 @@
     <h3>Keret</h3>
     <table class="tablakeret">
         <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
         </tr>
         <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
         </tr>
     </table>
     </table>
@@ -148,33 +154,62 @@
         </table>
         </table>
     </section>
-    <table>
+    <table class="tábla">
         <h2>Órarend</h2>
+
         <tr>
-            <td>Hétfő</td>
-            <td>Kedd</td>
-            <td>Szerda</td>
-            <td>Csütörtök</td>
-            <td>Péntek</td>
+            <th></th>
+            <th>Hétfő</th>
+            <th>Kedd</th>
+            <th>Szerda</th>
+            <th>Csütörtök</th>
+            <th>Péntek</th>
         </tr>
-            <td>Webprog</td>
-            <td>Adatbazis</td>
-            <td>Magyar</td>
-            <td>Matek</td>
-            <td>Tesi</td>
+            <th>1.óra</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
         <tr>
-            <td>Webprog</td>
-            <td>Adatbazis</td>
-            <td>Angol</td>
-            <td>Magyar</td>
-            <td>Fizika</td>
+            <th>2.óra</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
         </tr>
         <tr>
-            <td>Bioinfo</td>
-            <td>Angol</td>
-            <td>Angol</td>
-            <td>Tesi</td>
-            <td>Tesi</td>
+            <th>3.óra</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>4.óra</th>
+            <th></th>
+            <th></th>
+            <th</th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>5.óra</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>6.óra</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
         </tr>
     </table>
 </body>
