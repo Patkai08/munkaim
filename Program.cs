@@ -4,38 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace gyakorlas
+namespace dogamegoldas
 {
     internal class Program
     {
-        static int Betuszamlalo()
-        {
-            Console.WriteLine("Adj meg egy szöveget:");
-            string szoveg = Console.ReadLine();
-            int db = 0;
-            for (int i = 0; i < szoveg.Length; i++)
-            {
-                if (char.IsLetter(szoveg[i]))
-                {
-                    db++;
-                }
-            }
-            return db;
-        }
         static bool Palindrom()
         {
-            Console.Write("Adj meg egy szöveget: ");
+            Console.Write("Adj meg egy szöveget");
             string szoveg = Console.ReadLine();
             szoveg = szoveg.Replace("", "");
             szoveg = szoveg.ToLower();
 
             //1.megoldas
-            string szovegvissza = "";
+            string szovegVissza = "";
             for (int i = szoveg.Length - 1; i >= 0; i--)
             {
-                szovegvissza += szoveg[i];
+                szovegVissza += szoveg[i];
             }
-            if (szoveg==szovegvissza)
+            if (szoveg == szovegVissza)
             {
                 return true;
             }
@@ -43,21 +29,83 @@ namespace gyakorlas
             {
                 return false;
             }
+
+            ////2.megoldas
+            //int j = szoveg.Lenght - 1;
+            //for (int i = 0; i < szoveg.Lenght; i++)
+            //{
+            //    if (szoveg != szoveg[j])
+            //    {
+            //        return false;
+            //    }
+            //    j--;
+            //}
+            //return true;
+        }
+            static int BetuSzamlalo()
+        {
+            Console.Write("Adj meg egy szöveget: ");
+            string szoveg = Console.ReadLine();
+
+            int db = 0;
+            for (int i = 0; i  < szoveg.Length; i++)
+            {
+                if (char.IsLetter(szoveg[i]))
+                {
+                    db++;
+                    { 
+                    }
+                }
+            }
+            return db;
+        }
+
+        static int MaganhangzoSzam()
+        {
+            Console.Write("Adj meg egy szöveget: ");
+            string szoveg = Console.ReadLine() ;
+            szoveg = szoveg.ToLower();
+            char[] maganhangzok = { 'a', 'á', 'e', 'é', 'i', 'í', 'o', 'ó', 'ö', 'ő', 'u', 'ú', 'ü', 'ű' };
+            int db = 0;
+            for (int i = 0; i < szoveg.Length; i++)
+            {
+                if (maganhangzok.Contains(szoveg[i]))
+                {
+                    db++;
+                }
+            }
+        }
+
         }
         static void Main(string[] args)
         {
-            if (Palindrom())
-            {
-                Console.WriteLine("Ez a szöveg Palindrom");
-            }
-            else
-            {
-                Console.WriteLine("Ez a szöveg nem Palindrom");
-            }
-
-            Betuszamlalo();
-
-            Console.ReadLine();
+        if (Palindrom())
+        {
+            Console.WriteLine("Ez a szöveg Palindrom");
         }
+        else
+        {
+            Console.WriteLine("Ez a szöveg nem Palindrom");
+        }
+
+        Console.WriteLine(BetuSzamlalo());
+        Console.WriteLine(MaganhangzóSzam());
+
+
+        //3. feladat
+        DateTime now = DateTime.Now;
+        Console.WriteLine("Add meg a születési dátumodat! ");
+        DateTime szuldatum = DateTime.Parse(Console.ReadLine());
+        Console.WriteLine(now.Year - szuldatum.Year);
+
+        DateTime dt = new DateTime(2024, 03, 01, 11, 34); 
+        //now = now.AddYears(1);
+        //now= now.AddMonths(1);
+        //now= now.AddDays(1);
+        //Console.WriteLine(now)
+        Console.ReadLine();    
+    }
+
+
     }
 }
