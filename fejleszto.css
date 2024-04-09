@@ -1,0 +1,7 @@
+.bg-header {
+    background-image: url("assets/img/kockak.jpg");
+    height: 500px;
+}
+#akcio, #szolgaltatasok{
+    background-color: #1abc9c;
+}
